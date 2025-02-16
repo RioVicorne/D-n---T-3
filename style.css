@@ -12,7 +12,7 @@
       color: #333;
     }
     header {
-      background-color: #0c0c0c88;
+      background-color: #6bbaf8;
       color: #fff;
       text-align: center;
       position: relative;
@@ -108,19 +108,29 @@
     .sidebar a:hover {
       color: #ff4500;
     }
-    .feedback{
-      width: 670px;
+    /* .feedback{
       background-color: #43919b;
       border-radius: 5px;
       margin-left: 20px;
       padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     .feedback h3{
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
     .feedback .fb{
-      margin-bottom: 1000px;
+      margin-bottom: 10px;
+    } */
+    input{
+      background-color: transparent;
+    }
+
+    textarea{
+      color: black;
     }
 
     button{
@@ -212,3 +222,90 @@
 }
 
 
+.feedback {
+  background-image: linear-gradient(to right top, #6d9feb, #5e8ed9, #4f7ec7, #416eb5, #315ea4);
+  border-radius: 8px;
+  margin-left: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+  transition: transform 0.3s ease;
+}
+
+.feedback:hover {
+  transform: scale(1.02);
+}
+
+.feedback h3 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.feedback .fb {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback .fb input,
+.feedback .fb textarea {
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  color: #333;
+  width: 100%;
+  margin-top: 5px;
+  transition: border 0.3s ease;
+}
+
+.feedback .fb input:focus,
+.feedback .fb textarea:focus {
+  border-color: #00bcd4;
+  outline: none;
+}
+
+.feedback label {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #00bcd4;
+  color: white;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00796b;
+  transform: translateY(-3px);
+  border: 2px solid #004d40;
+}
+
+button[type="reset"] {
+  background-color: #f44336;
+}
+
+button[type="reset"]:hover {
+  background-color: #d32f2f;
+  border: 2px solid #b71c1c;
+}
